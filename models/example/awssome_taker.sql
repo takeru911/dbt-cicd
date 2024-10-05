@@ -10,7 +10,7 @@ select
     c_name,
     c_nationkey,
     c_phone,
-    count(distinct o_orderkey) * case when c_custkey % 2 = 0 then 1 else 2 end as order_count,
+    count(distinct o_orderkey) * case when c_custkey % 2 = 0 then 1.2 else 2 end as order_count,
     sum(o_totalprice)  as order_price
 from customer as c
 join orders as o on c.c_custkey = o.o_custkey
