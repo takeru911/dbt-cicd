@@ -10,8 +10,8 @@ select
     c_name,
     c_nationkey,
     c_phone,
-    count(distinct o_orderkey) as order_count,
-    sum(o_totalprice) as order_price
+    count(distinct o_orderkey) * 2 as order_count,
+    sum(o_totalprice) *  2 as order_price
 from customer as c
 join orders as o on c.c_custkey = o.o_custkey
 group by all
