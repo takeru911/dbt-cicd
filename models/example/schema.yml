@@ -2,6 +2,16 @@
 version: 2
 
 models:
+    - name: awssome_taker
+      columns:
+        - name: c_custkey
+          meta:
+            primary-key: true
+        - name: c_name
+        - name: c_nationkey
+        - name: c_phone
+        - name: order_count
+        - name: order_price
     - name: my_first_dbt_model
       description: "A starter dbt model"
       columns:
