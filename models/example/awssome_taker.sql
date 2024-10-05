@@ -9,7 +9,7 @@ select
     c_custkey,
     c_name,
     c_nationkey,
-    order_count,
+    c_phone,
     count(distinct o_orderkey) as order_count,
     sum(o_totalprice) as order_price
 from customer as c

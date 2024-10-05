@@ -9,7 +9,7 @@ models:
             primary-key: true
         - name: c_name
         - name: c_nationkey
-        - name: customer_order_count
+        - name: c_phone
         - name: order_count
         - name: order_price
     - name: my_first_dbt_model
