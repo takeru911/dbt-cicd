@@ -8,7 +8,8 @@ with customer as (
 select 
     c_custkey,
     c_name,
-    c_nationkey,    
+    c_nationkey,
+    order_count,
     count(distinct o_orderkey) as order_count,
     sum(o_totalprice) as order_price
 from customer as c
