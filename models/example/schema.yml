@@ -12,6 +12,11 @@ models:
         - name: c_phone
         - name: order_count
         - name: order_price
+      meta:
+        datafold:
+          datadiff:
+            exclude_columns:
+              - order_price
     - name: my_first_dbt_model
       description: "A starter dbt model"
       columns:
